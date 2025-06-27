@@ -15,7 +15,7 @@ spec:
       serviceAccountName: webapp-sa-26899
       containers:
         - name: webapp-container-26899
-          image: akashpandiyan/mypyapp:v5
+          image: akashpandiyan/mypyapp:v6
           ports:
             - containerPort: 5000
           envFrom:
