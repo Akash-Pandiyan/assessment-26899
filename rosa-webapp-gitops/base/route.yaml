@@ -7,5 +7,5 @@ spec:
     kind: Service
     name: webapp-service-26899
   port:
-    targetPort: 80
+    targetPort: 5000
   wildcardPolicy: None
