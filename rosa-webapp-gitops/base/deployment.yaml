@@ -18,6 +18,14 @@ spec:
           image: akashpandiyan/mypyapp:v6
           ports:
             - containerPort: 5000
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 3
           envFrom:
             - configMapRef:
                 name: webapp-config-26899
